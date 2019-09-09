@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main App page</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img href="logo" alt="Simply Satisfied logo">
+            <ul class="nav-bar">
+                <li><a href="main.html">Main</a></li>
+                <li><a href="Saved">Saved</a></li>
+                <li><a href="Generate">Generate</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <label for="generate-link">Generate your meal plan</label>
+        <button type="submit" class="go-generate">Go to Generator</button>
+
+        <label for="saved-meals">View saved meal plans</label>
+        <button type="submit" class="go-saved">Go to Saved</button>
+
+        <div class="hidden-form">
+            <form>
+                <label for="number-meals">Number of meals
+                    <br><i>Breakfast, Lunch and Dinner created for each day.</i>
+                </label>
+                <input type="text" name="meals" id="number-meals" placeholder="Day or Week" required>
+                <br>
+
+                <label for="calories">Daily Caloric Target</label>
+                <input type="text" name="calories" id="calories" placeholder="2000" required>
+                <br>
+
+                <label for="diet">Diet</label>
+                <input type="text" name="diet" id="diet" placeholder="">
+                <br>
+
+                <label for="allergens">Exclude</label>
+                <input type="text" name="exclude" id="exclude" placeholder="nuts,gluten,mushrooms">
+                <br>
+
+                <button type="submit" class="generate">Generate</button>
+            </form>
+
+            <section id="results">
+                <h2>Meal Plan</h2>
+                <ul id="results-list">
+
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
