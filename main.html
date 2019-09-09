@@ -6,20 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Main App page</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/0b8cb78c5f.js"></script>
 
 </head>
 <body>
     <header>
-        <nav>
-            <img href="logo_transparent.png" alt="Simply Satisfied logo">
-            <ul class="nav-bar">
-                <li><a href="main.html">Main</a></li>
-                <li><a href="Saved">Saved</a></li>
-                <li><a href="Generate">Generate</a></li>
-                <li><a href="login.html">Logout</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+                <img src="logo_transparent.png" alt="Simply Satisfied logo">
+        </div>
     </header>
+    <nav>
+        <div class="hamburger" onclick="toggleClass()"><i class="fas fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="main.html">Main</a></li>
+            <li><a href="Saved">Saved</a></li>
+            <li><a href="Generate">Generate</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
 
     <div class="main">
         <label for="generate-link">Generate your meal plan</label><br>
