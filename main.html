@@ -18,10 +18,8 @@
     <nav>
         <div class="hamburger" onclick="toggleClass()"><i class="fas fa-bars"></i></div>
         <ul class="mainMenu">
-            <li><a href="main.html">Main</a></li>
-            <li><a href="Saved">Saved</a></li>
-            <li><a href="Generate">Generate</a></li>
-            <li><a href="login.html">Logout</a></li>
+            <li><a href="main.html">Meal Plan Generator</a></li>
+            <li><a href="home.html">Home</a></li>
         </ul>
     </nav>
 
@@ -51,7 +49,8 @@
                 <button type="submit" class="generate">Generate</button>
             </form>
 
-            <section id="results">
+            <p id="js-error-message" class="error-message"></p>
+            <section id="results" class="hidden">
                 <h2>Meal Plan</h2>
                 <ul id="results-list">
 

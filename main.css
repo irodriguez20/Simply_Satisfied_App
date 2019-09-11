@@ -61,15 +61,7 @@ h1 {
     font-size: 20px;
 }
 
-.login-form, .signup-form {
-    align-items: center;
-    padding-top: none;
-    margin: auto;
-    height: 100%;
-    padding-bottom: 30px;
-    line-height: 20px;
-    font-size: 16px;
-}
+
 
 input {
     border-radius: 3px;
@@ -81,22 +73,9 @@ input {
     margin-bottom: 5px;
 }
 
-.login, .signup {
-    margin-top: 10px;
-    border-radius: 3px;
-    border: none;
-    width: 100%;
-    background: #cc7c94;
-    color: aliceblue;
-    font-size: 16px;
-    padding: 5px;
-    cursor: pointer;
+.hidden {
+    display: none;
 }
-
-.login:hover, .signup:hover {
-    background: #e4bbc1;
-    color: aliceblue;
-} 
 
 
 footer ul {
