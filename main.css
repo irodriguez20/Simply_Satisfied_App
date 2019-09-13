@@ -10,7 +10,6 @@
 
 body {
     font-family: sans-serif;
-    color: aliceblue;
     margin: 0;
     padding: 0;
 }
@@ -19,12 +18,14 @@ body {
     background: url('oranges-in-corner.jpg') fixed;
     background-size: auto;
     background-repeat: no-repeat;
+    color: darkslategrey;
 }
 
 .main-body {
     background: url('a-steak-on-a-grill-about-to-be-flipped.jpg') fixed;
     background-size: auto;
     background-repeat: no-repeat;
+    color: aliceblue;
 }
 
 header {
@@ -49,7 +50,9 @@ nav {
     width: 100%;
 }
 
-
+.hamburger {
+    padding-right: 20px;
+}
 
 .mainMenu.toggleCls{
     display: block;
@@ -76,6 +79,7 @@ nav ul {
     text-align: left;
     padding-left: 20px;
     line-height: 19px;
+    margin-bottom: 20px;
 }
 
 
@@ -88,7 +92,7 @@ a:link {
     padding: 8px;
     border: #b2c767;
     background-color: #b7ce67;
-    color: aliceblue;
+    /*color: aliceblue;*/
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
@@ -172,6 +176,10 @@ input {
     align-items: center;
     text-align: left;
     padding: 10px 10px;
+    background: rgba(58, 114, 88, 0.363);
+    margin-bottom: 15px;
+    border-radius: 3px;
+    color: white;
 }
 
 #results ul{
@@ -205,18 +213,6 @@ h5 {
         height: 25%;
     }
 
-    .hamburger {
-        display: none;
-    }
-
-    nav ul {
-        display: inline;
-        list-style: none;
-        text-align: right;
-        font-size: 16px;
-        /* padding: 15px 20px; */
-        
-    }
 
     form {
         text-align: left;
@@ -242,11 +238,11 @@ h5 {
     }
 
     .home-body {
-        background-size: 1024px 586px;
+        background-size: 1140px 732px;
     }
 
     .main-body {
-        background-size: 1024px 586px;
+        background-size: 1140px 732px;
     }
 
     .hamburger {
@@ -281,6 +277,15 @@ h5 {
 }
 
 @media screen and (min-width: 1220px) {
+   
+    .home-body {
+        background-size: 1440px 733px;
+    }
+
+    .main-body {
+        background-size: 1440px 733px;
+    }
+    
     img {
         width: 15%;
         height: 15%;
