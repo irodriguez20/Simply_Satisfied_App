@@ -109,7 +109,6 @@ function displayResults(meals, ingredientsArray, recipeArray, nutrients) {
  console.log("to test append", ingredientsArray);
  for (let i = 0; i < meals.length; i++) {
     $("#results-list").append(`
-      <li><img src='${meals[i].image}'>
       <h4>${meals[i].title}</h4>
       <p>Ready in: ${meals[i].readyInMinutes}minutes</p>
       <p>Servings: ${meals[i].servings}</p>
