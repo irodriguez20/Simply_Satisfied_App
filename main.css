@@ -2,12 +2,6 @@
     box-sizing: border-box;
 }
 
-*:before,
-*:after {
- box-sizing: border-box;
-}
-
-
 body {
     font-family: sans-serif;
     margin: 0;
@@ -15,18 +9,18 @@ body {
 }
 
 .home-body {
+    color:rgb(43, 54, 23);
     background: url('oranges-in-corner.jpg') fixed;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    color: darkslategrey;
-}
+} 
 
 .main-body {
-    background: url('a-steak-on-a-grill-about-to-be-flipped.jpg') fixed;
-    background-size: auto;
+    color: aliceblue; 
+    background: url('cherry-tomatoes-plated-with-kitchen-scissors.jpg') fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    color: aliceblue;
-}
+} 
 
 header {
     display: flex;
@@ -237,13 +231,13 @@ h5 {
         height: 20%;
     }
 
-    .home-body {
+   /* .home-body {
         background-size: 1140px 732px;
     }
 
     .main-body {
         background-size: 1140px 732px;
-    }
+    } */
 
     .hamburger {
         display: none;
@@ -278,13 +272,13 @@ h5 {
 
 @media screen and (min-width: 1220px) {
    
-    .home-body {
+   /* .home-body {
         background-size: 1440px 733px;
     }
 
     .main-body {
         background-size: 1440px 733px;
-    }
+    } */
     
     img {
         width: 15%;
