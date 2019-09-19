@@ -27,7 +27,6 @@ header {
    flex-direction: column; 
     align-items: center;
     width: 100%;
-    /* padding: 30px 0; */
 }
 
 .logo {
@@ -39,7 +38,6 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
-    /*background-color: #4a8058;*/
     color: aliceblue; 
     width: 100%;
 }
@@ -86,7 +84,6 @@ a:link {
     padding: 8px;
     border: #b2c767;
     background-color: #b7ce67;
-    /*color: aliceblue;*/
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
@@ -123,6 +120,12 @@ button:hover {
     text-align: left;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.hidden-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form {
@@ -231,14 +234,6 @@ h5 {
         height: 20%;
     }
 
-   /* .home-body {
-        background-size: 1140px 732px;
-    }
-
-    .main-body {
-        background-size: 1140px 732px;
-    } */
-
     .hamburger {
         display: none;
     }
@@ -247,9 +242,7 @@ h5 {
         display: inline;
         list-style: none;
         text-align: right;
-        font-size: 16px;
-        /* padding: 15px 20px; */
-        
+        font-size: 16px;        
     }
 
     form {
@@ -271,14 +264,6 @@ h5 {
 }
 
 @media screen and (min-width: 1220px) {
-   
-   /* .home-body {
-        background-size: 1440px 733px;
-    }
-
-    .main-body {
-        background-size: 1440px 733px;
-    } */
     
     img {
         width: 15%;
@@ -293,15 +278,11 @@ h5 {
         display: inline;
         list-style: none;
         text-align: center;
-        font-size: 16px;
-        /* padding: 15px 20px; */
-        
+        font-size: 16px;   
     }
 
     form {
         text-align: left;
-        align-items: left;
-        align-content: left;
         padding: 50px;
         width: 100%;
     }

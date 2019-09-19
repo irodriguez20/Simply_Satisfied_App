@@ -11,16 +11,12 @@ let stepsUrl = "https://api.spoonacular.com/recipes/";
 
 
 function getIngredients(mealsId) {
-
-  //console.log("getIngredients");
-  // for (let i = 0; i < responseJson.meals.length; i++) {
   //for recipe ingredients
   const params2 = {
     includeNutrition: false,
     apiKey: apiKey
   };
   let queryString2 = $.param(params2);
-  //let recipe = getMealPlan(responseJson.meals[i].id);
   const url2 = recipeUrl + `${mealsId}/information` + "?" + queryString2;
   let ingredients = url2;
   console.log("url2", url2);
@@ -53,18 +49,15 @@ function getIngredients(mealsId) {
     .catch(err => {
       $("#js-error-message").text(`Something failed: ${err.message}`);
     })
-  //}
 }
 //for recipe steps
 function getRecipe(mealsId) {
 
-  //console.log("recipeSteps", responseJson, ingredientsData);
   const params3 = {
     stepBreakdown: true,
     apiKey: apiKey
   };
   let queryString3 = $.param(params3);
-  //let steps = getSteps(responseJson.meals[i].id);
   const url3 = stepsUrl + `${mealsId}/analyzedInstructions` + "?" + queryString3;
   let recipes = url3;
   console.log("url3", url3);
@@ -100,17 +93,11 @@ function getRecipe(mealsId) {
 
 }
 
+//to display main meal info and meal plan nutrients
 function displayResults(meals, nutrients) {
 
-  /* let meal = meals;
-  let recipe = recipeArray;
-  let ingredients = ingredientsArray;
-  let dayNutrients = nutrients; */
-
-  // console.log("displayResults", meals, ingredientsArray, recipeArray, nutrients);
   $("#results-list").empty();
 
-  //console.log("to test append", ingredientsArray);
   for (let i = 0; i < meals.length; i++) {
     $("#results-list").append(`
       <h4>${meals[i].title}</h4>
@@ -118,25 +105,7 @@ function displayResults(meals, nutrients) {
       <p>Servings: ${meals[i].servings}</p>
       <ul id="${meals[i].id}"></ul>`)
   }
-  /*for (let j = 0; j < ingredientsArray.length; j++) {
-    console.log("ingredients append",ingredientsArray[j].original);
-    $("#`${meals[i].id}`").append(`
-      <h6>Ingredients:</h6>
-      <ul>
-      <li>${ingredientsArray[j].original}</li>
-      </ul>
-    `)
-  }*/
-  /*for (let k = 0; k < recipeArray.length; k++) {
-    console.log("recipe append",recipeArray[k].number, recipeArray[k].step);
-    $("#`{meals[i].id}`").append(`
-      <h6>Recipe</h6>
-      <ul>
-      <li>Step ${recipeArray[i].number}</li>
-      <li>${recipeArray[i].step}</li>
-      </ul>
-    `)
-  } */
+
   console.log("nutrients length", nutrients);
   $("#results-list").append(`
         <h5>Daily Nutrients:</h5>
@@ -175,9 +144,7 @@ function getMealPlan(searchTerm, calories, diet, exclude) {
     throw new Error(response.statusText);
   }).then(responseJson => {
     console.log(responseJson);
-    //let recipeArray = [];
-    //let ingredientsArray = [];
-    //let nutrientsArray = [];
+
     let meals = responseJson.meals;
     for (let i = 0; i < responseJson.meals.length; i++) {
       //for each meal we need to call get recipe
